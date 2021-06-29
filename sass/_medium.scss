@@ -1,0 +1,41 @@
+.desktop-only{
+    display:inline-block;
+}
+
+.mobile-only{
+    display:none;
+}
+
+@for $i from 1 to 13{
+    $w:($i/12) * 100%;
+    .medium-#{$i} {flex-basis: $w;}
+}
+
+.main-div {
+    margin:15% 7%;
+
+    .img-container {
+        border-radius: 0px 15px 15px 0px;
+        img {
+            border-radius: 0px 15px 15px 0px;
+        }
+    }
+
+    .main-content {
+        padding: 13% 7% 10% 7%;
+
+        text-align:left;
+
+        h1{
+            margin:0;
+
+            letter-spacing:.1rem;
+            font-size: 2.3rem;
+            line-height: 130%;
+        }
+
+        .tags-container {
+            padding-top: 40px;
+        }
+    }   
+}

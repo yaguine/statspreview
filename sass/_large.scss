@@ -1,0 +1,27 @@
+@for $i from 1 to 13{
+    $w:($i/12) * 100%;
+    .large-#{$i} {flex-basis: $w;}
+}
+
+.main-div {
+    .main-content {
+        padding: 13% 15% 10% 15%;
+
+        text-align:left;
+        h1{
+            font-size: 2.6rem;
+        }
+
+        h2{
+            font-size:1.7rem;
+        }
+
+        .main-par{
+            padding-top:8%;
+        }
+
+        .tags-container{
+            padding-top:60px;
+        }
+    }   
+}
